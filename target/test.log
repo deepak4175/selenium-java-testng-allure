@@ -1,0 +1,339 @@
+16:16:31.149 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Volumes/externalM/demo/functional/src/test/resources/testng.xml
+
+16:18:08.155 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Volumes/externalM/demo/functional/src/test/resources/testng.xml
+
+16:24:38.953 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Volumes/externalM/demo/functional/src/test/resources/testng.xml
+
+16:37:01.835 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Volumes/externalM/demo/functional/src/test/resources/testng.xml
+
+16:38:16.868 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Volumes/externalM/demo/functional/src/test/resources/testng.xml
+
+16:39:11.296 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Volumes/externalM/demo/functional/src/test/resources/testng.xml
+
+23:15:39.995 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Volumes/externalM/demo/functional/src/test/resources/testng.xml
+
+23:16:00.264 [main] DEBUG com.functional.pages.AmazonHomePage - Sign in button found: true
+23:16:00.794 [main] DEBUG com.functional.pages.AmazonHomePage - Email input found: true
+23:16:00.885 [main] DEBUG com.functional.pages.AmazonHomePage - Continue button found: true
+23:16:01.654 [main] DEBUG com.functional.pages.AmazonHomePage - Password input found: true
+23:16:01.679 [main] DEBUG com.functional.pages.AmazonHomePage - Sign in submit button found: true
+23:16:03.520 [main] DEBUG com.functional.pages.AmazonHomePage - Login successful - search box is visible
+23:22:41.591 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Volumes/externalM/demo/functional/src/test/resources/testng.xml
+
+23:22:43.054 [main] DEBUG com.functional.pages.AmazonHomePage - Initialized AmazonHomePage
+23:22:43.055 [main] DEBUG c.functional.pages.AmazonProductPage - Initialized AmazonProductPage
+23:22:43.055 [main] DEBUG c.f.pages.AmazonCheckoutPage - Initialized AmazonCheckoutPage
+23:23:01.925 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //input[@type='text' and contains(@placeholder, 'Search')]
+23:23:01.962 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //a[contains(@data-nav-role, 'signin') or contains(@href, 'signin')]
+23:23:01.971 [main] DEBUG com.functional.pages.AmazonHomePage - Sign in button found: true
+23:23:02.786 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //input[@type='email' or @id='ap_email']
+23:23:02.795 [main] DEBUG com.functional.pages.AmazonHomePage - Email input found: true
+23:23:02.886 [main] DEBUG com.functional.pages.AmazonHomePage - Continue button found: true
+23:23:03.857 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //input[@type='password' or @id='ap_password']
+23:23:03.867 [main] DEBUG com.functional.pages.AmazonHomePage - Password input found: true
+23:23:03.887 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //input[@type='submit' and (contains(@id,'signInSubmit') or contains(@class,'signin'))]
+23:23:03.894 [main] DEBUG com.functional.pages.AmazonHomePage - Sign in submit button found: true
+23:23:06.607 [main] DEBUG com.functional.pages.AmazonHomePage - Login successful - search box is visible
+23:23:06.607 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //input[@type='text' and contains(@placeholder, 'Search')]
+23:23:06.652 [main] DEBUG com.functional.pages.AmazonHomePage - Clicking on element: By.xpath: //input[@type='submit' and @value='Go']
+23:23:06.652 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be clickable: By.xpath: //input[@type='submit' and @value='Go']
+23:23:12.640 [main] DEBUG c.functional.pages.AmazonProductPage - Clicking on element: By.xpath: (//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2//a
+23:23:12.654 [main] DEBUG c.functional.pages.AmazonProductPage - Waiting for element to be clickable: By.xpath: (//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2//a
+23:23:22.707 [main] ERROR c.functional.pages.AmazonProductPage - Element not clickable: By.xpath: (//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2//a
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2//a (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.2', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: /var/folders/pt/xmw33shd3jl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63146}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63146/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e90190bce5b0dbe648323f78eddd7a5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.functional.pages.BasePage.waitForElementClickable(BasePage.java:39)
+	at com.functional.pages.BasePage.click(BasePage.java:51)
+	at com.functional.pages.AmazonProductPage.selectFirstProduct(AmazonProductPage.java:89)
+	at com.functional.tests.AmazonOrderTest.testCompleteOrderWorkflow(AmazonOrderTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+23:23:22.715 [main] ERROR c.functional.pages.AmazonProductPage - Failed to click on element: By.xpath: (//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2//a
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2//a (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.2', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: /var/folders/pt/xmw33shd3jl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63146}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63146/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e90190bce5b0dbe648323f78eddd7a5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.functional.pages.BasePage.waitForElementClickable(BasePage.java:39)
+	at com.functional.pages.BasePage.click(BasePage.java:51)
+	at com.functional.pages.AmazonProductPage.selectFirstProduct(AmazonProductPage.java:89)
+	at com.functional.tests.AmazonOrderTest.testCompleteOrderWorkflow(AmazonOrderTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+23:39:49.016 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Volumes/externalM/demo/functional/src/test/resources/testng.xml
+
+23:39:50.621 [main] DEBUG com.functional.pages.AmazonHomePage - Initialized AmazonHomePage
+23:39:50.656 [main] DEBUG c.functional.pages.AmazonProductPage - Initialized AmazonProductPage
+23:39:50.656 [main] DEBUG c.functional.pages.AmazonProductPage - Initialized AmazonProductPage with timeout: PT15S
+23:39:50.667 [main] DEBUG c.f.pages.AmazonCheckoutPage - Initialized AmazonCheckoutPage
+23:39:50.667 [main] DEBUG c.f.pages.AmazonCheckoutPage - Initialized AmazonCheckoutPage
+23:40:07.693 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //input[@type='text' and contains(@placeholder, 'Search')]
+23:40:07.733 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //a[contains(@data-nav-role, 'signin') or contains(@href, 'signin')]
+23:40:07.742 [main] DEBUG com.functional.pages.AmazonHomePage - Sign in button found: true
+23:40:08.392 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //input[@type='email' or @id='ap_email']
+23:40:08.401 [main] DEBUG com.functional.pages.AmazonHomePage - Email input found: true
+23:40:08.481 [main] DEBUG com.functional.pages.AmazonHomePage - Continue button found: true
+23:40:09.225 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //input[@type='password' or @id='ap_password']
+23:40:09.233 [main] DEBUG com.functional.pages.AmazonHomePage - Password input found: true
+23:40:09.255 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //input[@type='submit' and (contains(@id,'signInSubmit') or contains(@class,'signin'))]
+23:40:09.262 [main] DEBUG com.functional.pages.AmazonHomePage - Sign in submit button found: true
+23:40:11.299 [main] DEBUG com.functional.pages.AmazonHomePage - Login successful - search box is visible
+23:40:11.299 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //input[@type='text' and contains(@placeholder, 'Search')]
+23:40:11.344 [main] DEBUG com.functional.pages.AmazonHomePage - Clicking on element: By.xpath: //input[@type='submit' and @value='Go']
+23:40:11.344 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be clickable: By.xpath: //input[@type='submit' and @value='Go']
+23:41:39.262 [main] INFO  c.functional.pages.AmazonProductPage - Applying brand filter
+23:41:39.283 [main] DEBUG c.functional.pages.AmazonProductPage - Waiting for brand filter to be clickable
+23:41:54.377 [main] ERROR c.functional.pages.AmazonProductPage - Failed to apply brand filter: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()='Brands']/following::span[contains(text(), 'Logitech')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.2', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: /var/folders/pt/xmw33shd3jl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63898}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63898/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6cef37638eb0fef01f3147b3cd8d6beb
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()='Brands']/following::span[contains(text(), 'Logitech')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.2', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: /var/folders/pt/xmw33shd3jl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63898}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63898/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6cef37638eb0fef01f3147b3cd8d6beb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.functional.pages.AmazonProductPage.applyBrandFilter(AmazonProductPage.java:44)
+	at com.functional.tests.AmazonOrderTest.testCompleteOrderWorkflow(AmazonOrderTest.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+23:44:49.566 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Volumes/externalM/demo/functional/src/test/resources/testng.xml
+
+23:44:50.647 [main] DEBUG com.functional.pages.AmazonHomePage - Initialized AmazonHomePage
+23:44:50.647 [main] DEBUG c.functional.pages.AmazonProductPage - Initialized AmazonProductPage
+23:44:50.647 [main] DEBUG c.functional.pages.AmazonProductPage - Initialized AmazonProductPage with timeout: PT15S
+23:44:50.647 [main] DEBUG c.f.pages.AmazonCheckoutPage - Initialized AmazonCheckoutPage
+23:44:50.647 [main] DEBUG c.f.pages.AmazonCheckoutPage - Initialized AmazonCheckoutPage
+23:45:07.356 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //input[@type='text' and contains(@placeholder, 'Search')]
+23:45:07.399 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //a[contains(@data-nav-role, 'signin') or contains(@href, 'signin')]
+23:45:07.409 [main] DEBUG com.functional.pages.AmazonHomePage - Sign in button found: true
+23:45:07.822 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //input[@type='email' or @id='ap_email']
+23:45:07.830 [main] DEBUG com.functional.pages.AmazonHomePage - Email input found: true
+23:45:07.919 [main] DEBUG com.functional.pages.AmazonHomePage - Continue button found: true
+23:45:08.557 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //input[@type='password' or @id='ap_password']
+23:45:08.566 [main] DEBUG com.functional.pages.AmazonHomePage - Password input found: true
+23:45:08.587 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //input[@type='submit' and (contains(@id,'signInSubmit') or contains(@class,'signin'))]
+23:45:08.595 [main] DEBUG com.functional.pages.AmazonHomePage - Sign in submit button found: true
+23:45:10.161 [main] DEBUG com.functional.pages.AmazonHomePage - Login successful - search box is visible
+23:45:10.161 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be visible: By.xpath: //input[@type='text' and contains(@placeholder, 'Search')]
+23:45:10.296 [main] DEBUG com.functional.pages.AmazonHomePage - Clicking on element: By.xpath: //input[@type='submit' and @value='Go']
+23:45:10.296 [main] DEBUG com.functional.pages.AmazonHomePage - Waiting for element to be clickable: By.xpath: //input[@type='submit' and @value='Go']
+23:45:12.019 [main] INFO  c.functional.pages.AmazonProductPage - Applying brand filter
+23:45:12.019 [main] DEBUG c.functional.pages.AmazonProductPage - Waiting for brand filter to be clickable
+23:45:12.538 [main] DEBUG c.functional.pages.AmazonProductPage - Clicking brand filter using JavaScript
+23:45:14.073 [main] DEBUG c.functional.pages.AmazonProductPage - Waiting for results to update after applying brand filter
+23:45:14.086 [main] INFO  c.functional.pages.AmazonProductPage - Successfully applied brand filter
+23:45:14.086 [main] INFO  c.functional.pages.AmazonProductPage - Selecting first product from the list
+23:45:14.086 [main] DEBUG c.functional.pages.AmazonProductPage - Clicking on element: By.xpath: (//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2//a
+23:45:14.086 [main] DEBUG c.functional.pages.AmazonProductPage - Waiting for element to be clickable: By.xpath: (//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2//a
+23:45:24.122 [main] ERROR c.functional.pages.AmazonProductPage - Element not clickable: By.xpath: (//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2//a
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2//a (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.2', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: /var/folders/pt/xmw33shd3jl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64609}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64609/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a8831055578957828af67d7b0286706
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.functional.pages.BasePage.waitForElementClickable(BasePage.java:39)
+	at com.functional.pages.BasePage.click(BasePage.java:51)
+	at com.functional.pages.AmazonProductPage.selectFirstProduct(AmazonProductPage.java:120)
+	at com.functional.tests.AmazonOrderTest.testCompleteOrderWorkflow(AmazonOrderTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+23:45:24.142 [main] ERROR c.functional.pages.AmazonProductPage - Failed to click on element: By.xpath: (//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2//a
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2//a (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.2', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: /var/folders/pt/xmw33shd3jl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64609}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64609/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a8831055578957828af67d7b0286706
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.functional.pages.BasePage.waitForElementClickable(BasePage.java:39)
+	at com.functional.pages.BasePage.click(BasePage.java:51)
+	at com.functional.pages.AmazonProductPage.selectFirstProduct(AmazonProductPage.java:120)
+	at com.functional.tests.AmazonOrderTest.testCompleteOrderWorkflow(AmazonOrderTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+23:45:24.143 [main] ERROR c.functional.pages.AmazonProductPage - Failed to select first product: Expected condition failed: waiting for element to be clickable: By.xpath: (//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2//a (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.2', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: /var/folders/pt/xmw33shd3jl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64609}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64609/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a8831055578957828af67d7b0286706
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2//a (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.2', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: /var/folders/pt/xmw33shd3jl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64609}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64609/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a8831055578957828af67d7b0286706
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.functional.pages.BasePage.waitForElementClickable(BasePage.java:39)
+	at com.functional.pages.BasePage.click(BasePage.java:51)
+	at com.functional.pages.AmazonProductPage.selectFirstProduct(AmazonProductPage.java:120)
+	at com.functional.tests.AmazonOrderTest.testCompleteOrderWorkflow(AmazonOrderTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
