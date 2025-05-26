@@ -52,3 +52,4 @@ test.log
 *.rar
 
 ._*
+/allure-results/
