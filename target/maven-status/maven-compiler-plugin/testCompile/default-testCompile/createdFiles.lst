@@ -1,7 +1,2 @@
-._com
-com/functional/tests/AmazonOrderTest.class
-com/functional/._tests
-com/._functional
-com/functional/tests/SampleTest.class
-com/functional/tests/._AmazonOrderTest.class
-com/functional/tests/._SampleTest.class
+com\functional\tests\SampleTest.class
+com\functional\tests\AmazonOrderTest.class

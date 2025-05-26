@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Amazon_Test_Suite" class="navigator-link ">
-                    <span>testng.xml</span>
+                    <span>D:\learning\self\selenium-java-testng-allure\src\test\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,19 +129,27 @@
                   <a name="testCompleteOrderWorkflow">
                   </a> <!-- testCompleteOrderWorkflow -->
                   <span class="method-name">testCompleteOrderWorkflow</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;Brand&apos;]/following::span[contains(text(), &apos;Logitech&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">java.lang.RuntimeException: Failed to select first product: Expected condition failed: waiting for element to be clickable: By.xpath: (//div[contains(@class, &apos;s-result-item&apos;) and @data-component-type=&apos;s-search-result&apos;])[1]//h2//a (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;23.0.2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: /var/folders/pt/xmw33shd3jl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55040}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55040/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4d8e9d8d7f62a4a82341034a4986b7e6
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\124902\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51828}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51828/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3b6e3595e831f80b26294dd3c2fb759
+	at com.functional.pages.AmazonProductPage.selectFirstProduct(AmazonProductPage.java:125)
+	at com.functional.tests.AmazonOrderTest.testCompleteOrderWorkflow(AmazonOrderTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//div[contains(@class, &apos;s-result-item&apos;) and @data-component-type=&apos;s-search-result&apos;])[1]//h2//a (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\124902\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51828}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51828/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3b6e3595e831f80b26294dd3c2fb759
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.functional.pages.AmazonBasePage.waitForElementClickable(AmazonBasePage.java:24)
-	at com.functional.pages.AmazonBasePage.click(AmazonBasePage.java:28)
-	at com.functional.pages.AmazonProductPage.applyBrandFilter(AmazonProductPage.java:21)
-	at com.functional.tests.AmazonOrderTest.testCompleteOrderWorkflow(AmazonOrderTest.java:63)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at com.functional.pages.BasePage.waitForElementClickable(BasePage.java:39)
+	at com.functional.pages.BasePage.click(BasePage.java:51)
+	at com.functional.pages.AmazonProductPage.selectFirstProduct(AmazonProductPage.java:120)
+	... 31 more
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -151,7 +159,7 @@ Session ID: 4d8e9d8d7f62a4a82341034a4986b7e6
         </div> <!-- panel Amazon_Test_Suite -->
         <div panel-name="test-xml-Amazon_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Volumes/externalM/demo/functional/src/test/resources/testng.xml</span>
+            <span class="header-content">D:\learning\self\selenium-java-testng-allure\src\test\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -207,12 +215,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCompleteOrderWorkflow')
 data.setCell(0, 2, 'com.functional.tests.AmazonOrderTest')
-data.setCell(0, 3, 32837);
+data.setCell(0, 3, 45110);
 window.suiteTableData['Amazon_Test_Suite']= { tableData: data, tableDiv: 'times-div-Amazon_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-Amazon_Test_Suite">
               </div> <!-- times-div-Amazon_Test_Suite -->
             </div> <!-- times-div -->
@@ -247,11 +255,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testCompleteOrderWorkflow</span>
-                <span class="method-start">2608 ms</span>
+                <span class="method-start">12823 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35455 ms</span>
+                <span class="method-start">57980 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

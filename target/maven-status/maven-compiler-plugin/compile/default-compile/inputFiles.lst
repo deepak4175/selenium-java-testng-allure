@@ -1,7 +1,7 @@
-/Volumes/externalM/demo/functional/src/main/java/com/functional/pages/AmazonProductPage.java
-/Volumes/externalM/demo/functional/src/main/java/com/functional/utils/TestUtils.java
-/Volumes/externalM/demo/functional/src/main/java/com/functional/pages/AmazonHomePage.java
-/Volumes/externalM/demo/functional/src/main/java/com/functional/listeners/TestListener.java
-/Volumes/externalM/demo/functional/src/main/java/com/functional/config/ConfigManager.java
-/Volumes/externalM/demo/functional/src/main/java/com/functional/pages/AmazonBasePage.java
-/Volumes/externalM/demo/functional/src/main/java/com/functional/pages/AmazonCheckoutPage.java
+D:\learning\self\selenium-java-testng-allure\src\main\java\com\functional\pages\AmazonHomePage.java
+D:\learning\self\selenium-java-testng-allure\src\main\java\com\functional\pages\AmazonProductPage.java
+D:\learning\self\selenium-java-testng-allure\src\main\java\com\functional\listeners\TestListener.java
+D:\learning\self\selenium-java-testng-allure\src\main\java\com\functional\utils\TestUtils.java
+D:\learning\self\selenium-java-testng-allure\src\main\java\com\functional\pages\AmazonCheckoutPage.java
+D:\learning\self\selenium-java-testng-allure\src\main\java\com\functional\pages\BasePage.java
+D:\learning\self\selenium-java-testng-allure\src\main\java\com\functional\config\ConfigManager.java

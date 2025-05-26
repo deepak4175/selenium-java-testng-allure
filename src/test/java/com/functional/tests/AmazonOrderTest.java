@@ -20,7 +20,7 @@ public class AmazonOrderTest {
     private AmazonHomePage homePage;
     private AmazonProductPage productPage;
     private AmazonCheckoutPage checkoutPage;
-    private static final String EMAIL = "8294381810";
+    private static final String EMAIL = "testing@gmailcom";
     private static final String PASSWORD = "Testing@121";
 
     @BeforeMethod
@@ -61,11 +61,10 @@ public class AmazonOrderTest {
 
             // Step 4: Apply filters
             productPage.applyBrandFilter();
-         //   productPage.applyPriceRangeFilter();
+            productPage.applyPriceRangeFilter();
 
             // Step 5: Select and add to cart
-            productPage.selectFirstProduct();
-            productPage.addToCart();
+            productPage.FirstProductAddToCart();
 
             // Step 6: Proceed to checkout
             productPage.proceedToCheckout();

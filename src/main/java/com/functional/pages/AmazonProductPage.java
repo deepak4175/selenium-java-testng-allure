@@ -2,24 +2,29 @@ package com.functional.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.security.PrivateKey;
 import java.time.Duration;
+import java.util.PrimitiveIterator;
 
 public class AmazonProductPage extends BasePage {
     // Locators using relative XPath
     // Filter locators
     private final By brandFilter = By.xpath("//span[text()='Brands']/following::span[contains(text(), 'Logitech')]");
     private final By priceFilterSection = By.xpath("//span[text()='Price']/parent::div");
-    private final By priceRangeFilter = By.xpath("//span[text()='Price']/following::span[contains(text(), 'Up to ₹')]");
+    private final By priceRangeFilter = By.xpath("//span[text()='Price']/../..//input[contains(@id,'slider-item_upper')]");
     
     // Product and action locators
     private final By firstProduct = By.xpath("(//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2//a");
-    private final By addToCartButton = By.xpath("//input[@id='add-to-cart-button']");
+    private final By addToCartButton = By.xpath("(//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//button");
     private final By proceedToCheckoutButton = By.xpath("//input[@name='proceedToRetailCheckout']");
 
     // Results locator
@@ -28,11 +33,13 @@ public class AmazonProductPage extends BasePage {
     // Timeout for explicit waits
     private final Duration ELEMENT_TIMEOUT = Duration.ofSeconds(15);
     private final WebDriverWait wait;
+    private final Actions action;
     private static final Logger logger = LoggerFactory.getLogger(AmazonProductPage.class);
 
     public AmazonProductPage(WebDriver driver) {
         super(driver);
         this.wait = new WebDriverWait(driver, ELEMENT_TIMEOUT);
+        this.action = new Actions(driver);
         logger.debug("Initialized AmazonProductPage with timeout: {}", ELEMENT_TIMEOUT);
     }
 
@@ -78,8 +85,7 @@ public class AmazonProductPage extends BasePage {
         try {
             // Wait for price filter section to be visible
             logger.debug("Waiting for price filter section to be visible");
-            WebElement priceSection = wait.until(ExpectedConditions.visibilityOfElementLocated(priceFilterSection));
-            
+            WebElement priceSection = wait.until(ExpectedConditions.visibilityOf(driver.findElement(priceFilterSection)));
             // Scroll to price filter section to ensure it's in view
             logger.trace("Scrolling to price filter section");
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'})", priceSection);
@@ -100,8 +106,14 @@ public class AmazonProductPage extends BasePage {
             
             // Click using JavaScript to avoid any potential click interception
             logger.debug("Clicking price range filter using JavaScript");
-            ((JavascriptExecutor) driver).executeScript("arguments[0].click()", priceRangeElement);
-            
+            Boolean price=false;
+            while(price==false){
+                priceRangeElement.sendKeys(Keys.ARROW_LEFT);
+                if(priceRangeElement.getAttribute("aria-valuetext").equals("₹2,000")){
+                    price=true;
+                }
+            }
+            action.clickAndHold(priceRangeElement).moveByOffset(-50, 0).release().build().perform();
             // Wait for results to update after applying price filter
             logger.debug("Waiting for results to update after applying price filter");
             wait.until(ExpectedConditions.visibilityOfElementLocated(filterResults));
@@ -126,7 +138,7 @@ public class AmazonProductPage extends BasePage {
         }
     }
 
-    public void addToCart() {
+    public void FirstProductAddToCart() {
         logger.info("Adding product to cart");
         try {
             click(addToCartButton);
