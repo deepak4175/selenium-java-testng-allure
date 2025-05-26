@@ -49,4 +49,6 @@ test.log
 *.ear
 *.zip
 *.tar.gz
-*.rar 
+*.rar
+
+._*
