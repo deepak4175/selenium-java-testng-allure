@@ -20,7 +20,7 @@ public class AmazonOrderTest {
     private AmazonHomePage homePage;
     private AmazonProductPage productPage;
     private AmazonCheckoutPage checkoutPage;
-    private static final String EMAIL = "testing@gmailcom";
+    private static final String EMAIL = "8294381810";
     private static final String PASSWORD = "Testing@121";
 
     @BeforeMethod
@@ -61,7 +61,7 @@ public class AmazonOrderTest {
 
             // Step 4: Apply filters
             productPage.applyBrandFilter();
-            productPage.applyPriceRangeFilter();
+            productPage.applyPriceRangeFilter("2,500");
 
             // Step 5: Select and add to cart
             productPage.FirstProductAddToCart();
@@ -89,7 +89,6 @@ public class AmazonOrderTest {
             String deliveryDate = checkoutPage.getDeliveryDate();
             Assert.assertNotNull(orderNumber, "Order number should be present");
             Assert.assertNotNull(deliveryDate, "Delivery date should be present");
-
             // Step 10: Cancel order
             checkoutPage.cancelOrder();
         } catch (Exception e) {

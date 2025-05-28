@@ -13,6 +13,7 @@ public abstract class BasePage {
     protected final WebDriver driver;
     protected final WebDriverWait wait;
     protected final Logger logger;
+    protected String defaultWindow;
 
     protected BasePage(WebDriver driver) {
         this.driver = driver;
@@ -81,6 +82,17 @@ public abstract class BasePage {
             return text;
         } catch (Exception e) {
             logger.error("Failed to get text from element: {}", locator, e);
+            throw e;
+        }
+    }
+    protected void switchToWindow(String title) {
+        logger.debug("Switching to window with title: {}", title);
+        try {
+            defaultWindow = driver.getWindowHandle();
+            driver.switchTo().window(title);
+            logger.trace("Successfully switched to window with title: {}", title);
+        } catch (Exception e) {
+            logger.error("Failed to switch to window with title: {}", title, e);
             throw e;
         }
     }

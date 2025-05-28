@@ -23,7 +23,7 @@ public class AmazonProductPage extends BasePage {
     private final By priceRangeFilter = By.xpath("//span[text()='Price']/../..//input[contains(@id,'slider-item_upper')]");
     
     // Product and action locators
-    private final By firstProduct = By.xpath("(//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2//a");
+    private final By firstProduct = By.xpath("(//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//h2");
     private final By addToCartButton = By.xpath("(//div[contains(@class, 's-result-item') and @data-component-type='s-search-result'])[1]//button");
     private final By proceedToCheckoutButton = By.xpath("//input[@name='proceedToRetailCheckout']");
 
@@ -80,7 +80,7 @@ public class AmazonProductPage extends BasePage {
         }
     }
 
-    public void applyPriceRangeFilter() {
+    public void applyPriceRangeFilter(String EXPECTED_price) {
         logger.info("Applying price range filter");
         try {
             // Wait for price filter section to be visible
@@ -109,16 +109,15 @@ public class AmazonProductPage extends BasePage {
             Boolean price=false;
             while(price==false){
                 priceRangeElement.sendKeys(Keys.ARROW_LEFT);
-                if(priceRangeElement.getAttribute("aria-valuetext").equals("₹2,000")){
+                if(priceRangeElement.getAttribute("aria-valuetext").equals("₹"+EXPECTED_price)){
                     price=true;
                 }
             }
-            action.clickAndHold(priceRangeElement).moveByOffset(-50, 0).release().build().perform();
-            // Wait for results to update after applying price filter
+            //action.clickAndHold(priceRangeElement).moveByOffset(-50, 0).release().build().perform();
+            //Wait for results to update after applying price filter
             logger.debug("Waiting for results to update after applying price filter");
             wait.until(ExpectedConditions.visibilityOfElementLocated(filterResults));
             logger.info("Successfully applied price range filter");
-            
         } catch (Exception e) {
             String errorMsg = "Failed to apply price range filter: " + e.getMessage();
             logger.error(errorMsg, e);
@@ -153,6 +152,7 @@ public class AmazonProductPage extends BasePage {
     public void proceedToCheckout() {
         logger.info("Proceeding to checkout");
         try {
+            click(firstProduct);
             click(proceedToCheckoutButton);
             logger.info("Successfully proceeded to checkout");
         } catch (Exception e) {
